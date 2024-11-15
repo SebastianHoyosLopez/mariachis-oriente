@@ -665,7 +665,7 @@ nav#nav-mobile a:hover {
 }
 
 .social-icons {
-    display: inline-block;
+    display: flex;
     list-style: none;
 }
 
@@ -788,7 +788,7 @@ h6 {
 }
 #banner img {
     position: absolute;
-   
+    animation: fadelef 2s ease-in-out;  
     right: 0; /* Posiciona la imagen en la esquina superior derecha */
     width: 50%; /* Ancho inicial de la imagen */
     height: auto;

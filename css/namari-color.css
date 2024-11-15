@@ -166,37 +166,44 @@ body {
 
 /* Banner Typography */
 
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translatey(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
+  @keyframes fadelef {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:62px;
     line-height:60px;
     font-weight:800;
-    color: #e0dfdc;
-    
     letter-spacing: .1em;
-    text-shadow: 
-      0 -1px 0 #fff, 
-      0 1px 0 #2e2e2e, 
-      0 2px 0 #2c2c2c, 
-      0 3px 0 #2a2a2a, 
-      0 4px 0 #282828, 
-      0 5px 0 #262626, 
-      0 6px 0 #242424, 
-      0 7px 0 #222, 
-      0 8px 0 #202020, 
-      0 9px 0 #1e1e1e, 
-      0 10px 0 #1c1c1c, 
-      0 11px 0 #1a1a1a, 
-      0 12px 0 #181818, 
-      0 13px 0 #161616, 
-      0 14px 0 #141414, 
-      0 15px 0 #121212, 
-      0 22px 30px rgba(0, 0, 0, 0.9);
+    color: #8d8d8b; /* O cualquier otro color de fondo */
+    animation: fadeInUp 1s ease-in-out;
+ text-shadow: -4px 4px 2px rgba(210,179,86,0.8);
+    
       @media (max-width: 480px) {
         font-size:42px;
         
 
       }
+
+   
   }
 
 #banner h2 {
@@ -204,10 +211,9 @@ body {
     font-size:20px;
     font-weight:300;
     color: #2c2c2c;
+    animation: fadeInUp 2s ease-in-out;
     letter-spacing: .05em;
-    text-shadow: 
-      4px 4px 0px #d5d5d5, 
-      7px 7px 0px rgba(0, 0, 0, 0.2);
+ 
   }
 
 
